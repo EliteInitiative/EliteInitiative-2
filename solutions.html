@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>الحلول | مبادرة النخبة</title>
+<meta name="description" content="حلول امتحانات الشهادة السودانية، مرتبطة بكل امتحان عند توفرها.">
+<link rel="icon" href="assets/elite-logo.jpg">
+<link rel="stylesheet" href="assets/style.css">
+</head>
+<body>
+
+<header class="site-header">
+  <div class="container header-inner">
+    <a href="index.html" class="brand-mark">
+      <img src="assets/elite-logo.jpg" alt="مبادرة النخبة">
+    </a>
+    <nav class="main-nav" id="main-nav">
+      <ul>
+        <li><a href="index.html" data-page="index.html">الرئيسية</a></li>
+        <li><a href="books.html" data-page="books.html">الكتب</a></li>
+        <li><a href="exams.html" data-page="exams.html">الامتحانات</a></li>
+        <li><a href="solutions.html" data-page="solutions.html">الحلول</a></li>
+        <li><a href="summaries.html" data-page="summaries.html">المذكرات</a></li>
+        <li><a href="admins.html" data-page="admins.html">الإداريين</a></li>
+        <li><a href="about.html" data-page="about.html">عن المبادرة</a></li>
+        <li><a href="contact.html" data-page="contact.html">تواصل معنا</a></li>
+      </ul>
+    </nav>
+    <button class="nav-toggle" aria-expanded="false" aria-controls="main-nav" aria-label="فتح القائمة">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+</header>
+
+<section class="page-header">
+  <div class="container">
+    <h1 class="section-title">الحلول</h1>
+    <p class="section-desc">راجع خطوات الحل لكل امتحان حسب المادة والسنة.</p>
+
+    <div class="filters-bar">
+      <div class="search-row">
+        <span class="search-icon" aria-hidden="true">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none"><circle cx="11" cy="11" r="7" stroke="currentColor" stroke-width="2"/><path d="M21 21L16.65 16.65" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
+        </span>
+        <input type="search" data-filter-search placeholder="ابحث عن حل..." aria-label="ابحث عن حل">
+      </div>
+      <div class="select-field">
+        <select data-filter-subject aria-label="المادة">
+          <option value="">كل المواد</option>
+          <option>فيزياء</option>
+          <option>رياضيات</option>
+          <option>اللغة العربية</option>
+          <option>اللغة الإنجليزية</option>
+          <option>كيمياء</option>
+          <option>أحياء</option>
+          <option>هندسية</option>
+          <option>تربية إسلامية</option>
+          <option>حاسوب</option>
+          <option>المجال الأدبي</option>
+        </select>
+      </div>
+      <div class="select-field">
+        <select data-filter-year aria-label="السنة">
+          <option value="">كل السنوات</option>
+          <option>2025</option>
+          <option>2024</option>
+          <option>2023</option>
+          <option>2022</option>
+        </select>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="resource-list">
+  <div class="container">
+    <p class="results-meta" data-results-meta></p>
+    <div data-resource-list></div>
+  </div>
+</section>
+
+<footer class="site-footer">
+  <div class="container footer-inner">
+    <p class="footer-note">© مبادرة النخبة — جميع الحقوق محفوظة</p>
+    <nav class="footer-links">
+      <a href="about.html">عن المبادرة</a>
+      <a href="admins.html">الإداريين</a>
+      <a href="contact.html">تواصل معنا</a>
+    </nav>
+  </div>
+</footer>
+
+<script>
+  // ضع بيانات الحلول الحقيقية هنا عند توفرها. يمكن ربط الحل بامتحانه عبر relatedExamTitle. مثال الشكل المتوقع لكل عنصر:
+  // { title: "حل امتحان الرياضيات", subject: "رياضيات", year: "2024", type: "حل", relatedExamTitle: "امتحان الرياضيات 2024", url: "https://..." }
+  window.ELITE_DATA = [];
+</script>
+<script src="assets/app.js"></script>
+</body>
+</html>
